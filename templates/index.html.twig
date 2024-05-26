@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+{{parent()}}
+liste des candidatures
+{% endblock %}
+
+{% block body %}
+
+<button class="btn btn-primary"><a class="text-white" href="{{ path('app.create')}}">Ajouter une candidature</a></button>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">entreprise</th>
+      <th scope="col">localisation</th>
+      <th scope="col">description entreprise</th>
+      <th scope="col">poste</th>
+      <th scope="col">description poste</th>
+      <th scope="col">salaire</th>
+      <th scope="col">languages</th>
+      <th scope="col">requis</th>
+      <th scope="col">lien annonce</th>
+      <th scope="col">en ligne ?</th>
+      <th scope="col">retour ?</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+  </tbody>
+</table>
+{% endblock %}

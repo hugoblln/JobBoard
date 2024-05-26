@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+
+{% block title %}
+{{parent()}}
+ajout
+{% endblock %}
+
+{% block body %}
+
+<h1>Nouvelle candidature</h1>
+
+{% include "_form.html.twig" with {labelButton: 'creer'} %}
+
+{% endblock %}

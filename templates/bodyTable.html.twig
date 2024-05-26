@@ -1,0 +1,17 @@
+  {% for candidatures in candidature %}
+<tr scope="row">
+      <td scope="row">{{candidature.id}}</td>
+      <td scope="row">{{candidature.Entreprise}}</td>
+      <td scope="row">{{candidature.Localisation}}</td>
+      <td scope="row">{{candidature.descriptionEntreprise}}</td>
+      <td scope="row">{{candidature.Poste}}</td>
+      <td scope="row">{{candidature.descriptionPoste}}</td>
+      <td scope="row">{{candidature.Salaire}}</td>
+      <td scope="row">{{candidature.Languages}}</td>
+      <td scope="row">{{candidature.Requis}}</td>
+      <td scope="row">{{candidature.lienAnnonce}}</td>
+      <td scope="row">{{candidature.enLigne}}</td>
+      <td scope="row">{{candidature.Retour}}</td>
+    </tr>
+   
+ {% endfor %}
