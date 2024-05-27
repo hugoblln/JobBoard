@@ -11,4 +11,5 @@ const $ = require('jquery');
 
 require('bootstrap');
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+import './javascript/jquery.js'
+import './javascript/bootstrap-table.js'

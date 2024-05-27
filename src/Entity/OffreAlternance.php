@@ -56,8 +56,14 @@ class OffreAlternance
     private ?bool $enLigne = null;
 
     #[ORM\Column]
-    #[Assert\NotBlank()]
+    #[Assert\NotNull()]
     private ?bool $Retour = null;
+
+    public function __construct()
+    {
+        $this->enLigne = true;
+        $this->Retour = false;
+    }
 
     public function getId(): ?int
     {
